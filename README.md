@@ -46,7 +46,7 @@ If you need a sitemap or list of all your middleman pages, then you create a **s
 </ul>
 ```
 
-If you dont wanna have layout at this page, dont't forget to add:
+If you don't wanna have layout at this page, don't forget to add:
 ```ruby
 page "/sitemap.html", :layout => false
 ```
