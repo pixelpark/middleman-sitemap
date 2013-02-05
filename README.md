@@ -32,6 +32,14 @@ and replace the url with your domain.
 Next, copy the **sitemap.xml.builder** in your project root folder.
 Now, start your middleman server, and take a look at **http://localhost:4567/sitemap.xml**
 
+To override the default changefreq and priority values adding the corresponding local yaml data to the page:
+```ruby
+---
+changefreq: "weekly"
+priority: "1"
+---
+```
+
 ## html sitemap
 If you need a sitemap or list of all your middleman pages, then you create a **sitemap.html.erb** with the following content:
 
