@@ -25,9 +25,9 @@ page "/sitemap.xml", :layout => false
 
 Next, create a **sitemap.yml** file in your **data** folder with this content:
 ```ruby
-url: http://localhost:4567
+url: http://localhost:4567/
 ```
-and replace the url with your domain.
+and replace the url with your domain. The url **must** end with a `/``.
 
 Next, copy the **sitemap.xml.builder** in your project root folder.
 Now, start your middleman server, and take a look at **http://localhost:4567/sitemap.xml**
