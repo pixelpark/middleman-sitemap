@@ -29,7 +29,7 @@ url: http://localhost:4567
 ```
 and replace the url with your domain.
 
-Next, copy the **sitemap.xml.builder** in your project root folder.
++Next, copy [the **sitemap.xml.builder** in this repo](sitemap.xml.builder) to your project root folder.
 Now, start your middleman server, and take a look at **http://localhost:4567/sitemap.xml**
 
 To override the default changefreq and priority values adding the corresponding local yaml data to the page:
