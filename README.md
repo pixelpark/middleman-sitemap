@@ -46,10 +46,8 @@ If you need a sitemap or list of all your middleman pages, then you create a **s
 ```ruby
 <% root_url = data.sitemap.url %>
 <ul>
-    <% sitemap.resources.each do |page| %>
-        <% if page.path =~ /\.html/ %>
-            <li><a href="<%= "#{root_url}#{page.url}" %>"><%= "#{root_url}#{page.url}" %></a></li>
-        <% end %>
+    <% sitemap.resources.select{ |page| page.path =~ /\.html/ }.each do |page| %>
+        <li><a href="<%= "#{root_url}#{page.url}" %>"><%= "#{root_url}#{page.url}" %></a></li>
     <% end %>
 </ul>
 ```
